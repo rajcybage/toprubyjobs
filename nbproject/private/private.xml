@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/job/app/assets/stylesheets/joblists.css.scss</file>
+            <file>file:/D:/job/db/migrate/20141002152943_add_column_joblist_id_to_address.rb</file>
+            <file>file:/D:/job/app/models/python_joblist.rb</file>
+            <file>file:/D:/job/app/models/address.rb</file>
+            <file>file:/D:/job/db/migrate/20141002114834_create_addresses.rb</file>
+            <file>file:/D:/job/config/routes.rb</file>
+            <file>file:/D:/job/app/controllers/joblists_controller.rb</file>
+            <file>file:/D:/job/app/models/joblist.rb</file>
+            <file>file:/D:/job/app/assets/javascripts/application.js</file>
+            <file>file:/D:/job/app/models/mobile_Dev_joblist.rb</file>
+            <file>file:/D:/job/app/helpers/application_helper.rb</file>
+            <file>file:/D:/job/app/views/joblists/_form.html.erb</file>
+            <file>file:/D:/job/db/migrate/20141002034342_create_joblists.rb</file>
+            <file>file:/D:/job/app/views/joblists/new.html.erb</file>
+            <file>file:/D:/job/app/views/layouts/application.html.erb</file>
+            <file>file:/D:/job/app/views/joblists/_tinymce.html.erb</file>
+            <file>file:/D:/job/Gemfile</file>
+            <file>file:/D:/job/app/assets/stylesheets/application.css</file>
+            <file>file:/D:/job/app/views/joblists/index.html.erb</file>
+            <file>file:/D:/job/app/models/ruby_joblist.rb</file>
+        </group>
+    </open-files>
+</project-private>

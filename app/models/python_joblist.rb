@@ -1,0 +1,2 @@
+class PythonJoblist < Joblist
+end

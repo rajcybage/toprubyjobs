@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Short description:</strong>
+  <%= @joblist.short_description %>
+</p>
+
+<p>
+  <strong>Long description:</strong>
+  <%= @joblist.long_description %>
+</p>
+
+<p>
+  <strong>Job link:</strong>
+  <%= @joblist.job_link %>
+</p>
+
+<p>
+  <strong>Recruiter name:</strong>
+  <%= @joblist.recruiter_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @joblist.title %>
+</p>
+
+<p>
+  <strong>Number of position:</strong>
+  <%= @joblist.number_of_position %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @joblist.type %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @joblist.location %>
+</p>
+
+<%= link_to 'Edit', edit_joblist_path(@joblist) %> |
+<%= link_to 'Back', joblists_path %>

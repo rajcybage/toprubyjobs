@@ -1,0 +1,36 @@
+<h1>Listing joblists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Short description</th>
+      <th>Long description</th>
+      <th>Job link</th>
+      <th>Recruiter name</th>
+      <th>Title</th>
+      <th>Number of position</th>
+      <th>Type</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @joblists.each do |joblist| %>
+      <tr>
+        <td><%= joblist.short_description %></td>
+        <td><%= joblist.long_description %></td>
+        <td><%= joblist.job_link %></td>
+        <td><%= joblist.recruiter_name %></td>
+        <td><%= joblist.title %></td>
+        <td><%= joblist.number_of_position %></td>
+        <td><%= joblist.type %></td>
+        <td><%= joblist.location %></td>
+        <td><%= link_to 'Edit', edit_joblist_path(joblist) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

@@ -1,0 +1,9 @@
+## YAML Template.
+toolbar:
+    - stylesheet | bold  italic | undo redo
+    - image | link
+plugins:
+    - image
+    - link
+
+  

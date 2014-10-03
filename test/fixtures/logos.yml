@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rails: MyString
+  g: MyString
+  migration: MyString
+  add_column_joblist_id_to_address: MyString
+
+two:
+  rails: MyString
+  g: MyString
+  migration: MyString
+  add_column_joblist_id_to_address: MyString

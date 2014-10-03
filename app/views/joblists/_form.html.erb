@@ -1,0 +1,78 @@
+<%= tinymce_assets %>
+<%= render partial: "tinymce" %>
+<%= form_for @joblist, html: {role: "form"}  do |f| %>
+  <% if @joblist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@joblist.errors.count, "error") %> prohibited this joblist from being saved:</h2>
+
+      <ul>
+      <% @joblist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+<div class="dl-horizontal"></div>
+
+  <h2>Company Information</h2>
+  <hr/><hr/>
+  <div class="form-group">
+    <%= f.label :recruiter_name, "Company Name" %><br>
+    <%= f.text_field :recruiter_name, class: "form-control" %>
+  </div> 
+
+  <div class="field">
+    <%= f.label :job_link, "Company Url" %><br>
+    <%= f.text_field :job_link, class: "form-control" %>
+  </div>
+  
+<div class="dl-horizontal"></div>
+  <h2>Position Information</h2>
+  <hr/><hr/>
+  <div class="form-group">
+    <%= f.label :long_description %><br>
+    <%= f.text_area :long_description, class: "tinymce", id: "ExampleInputEmail", rows: 20, cols: 100 %></div>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :title, "Apply Instruction" %><br>
+    <%= f.text_field :title, class: "form-control", :placeholder => "Eg: Email your resume to xxx@google.co.in" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :number_of_position %><br>
+    <%= f.number_field :number_of_position, class: "form-control", width: "32px"  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :type %><br>
+    <%= f.select :type, Joblist::TYPES, class: "form-control" %>
+  </div>
+  <div class="dl-horizontal"></div>
+  <h2>Location Information</h2>
+  <hr/><hr/>
+  
+    <%= f.fields_for :address do |address| %>
+      <div class="form-group">
+        <%= address.label :city %>
+        <%= address.text_field :city, class: "form-control", placeholder: "Ex: New York,Mumbai,Hong Kong, Singapur" %>
+    </div>
+     <div class="form-group">
+        <%= address.label :state %>
+        <%= address.text_field :state, class: "form-control", placeholder: "Ex: Orlando,Washington,Maharashtra,Gujrat" %>
+    </div>    
+    <div class="form-group">
+        <%= address.label :postal_code %>
+        <%= address.text_field :postal_code, class: "form-control" %>
+    </div>    
+    <div class="form-group">
+        <%= address.label :county_code, "Country" %>
+        <%= address.text_field :country_code, class: "form-control", placeholder: "Ex: US,IN,CA,FR,GB" %>
+    </div>    
+    <% end %>
+    
+  </div>
+  <div class="actions">
+    <%= f.submit class: "btn btn-default", Value: "Post a Job" %>
+  </div>
+<% end %>
+  <br/>

@@ -1,0 +1,2 @@
+class MobiledevJoblist < Joblist
+end
